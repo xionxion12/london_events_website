@@ -1250,8 +1250,8 @@ input[type="date"], select {
   document.getElementById('reset').addEventListener('click', function () {
     setKind('');
     venueEl.value = '';
-    toEl.value = '';
     fromEl.value = today();
+    toEl.value = endOfMonth();
     apply();
   });
 
@@ -1262,9 +1262,11 @@ input[type="date"], select {
     toEl.value = initial.to || '';
     venueEl.value = initial.venue || '';
   } else {
-    // Default to hiding nothing but the past. The store is pruned at build
-    // time, so this only matters once the page has outlived its build.
+    // Default to "This month": today through the end of the current month,
+    // matching what the chip of the same name sets. A link carrying a hash
+    // still wins, so shared filters are unaffected.
     fromEl.value = today();
+    toEl.value = endOfMonth();
   }
   apply();
 })();
