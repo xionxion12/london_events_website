@@ -154,7 +154,7 @@ input[type="date"], select {
 <body>
 <header class="masthead">
   <h1>London Events</h1>
-  <p class="standfirst">82 events · 16 Sep 2026 – 12 Dec 2026 · updated 16 Sep 2026</p>
+  <p class="standfirst">83 events · 16 Sep 2026 – 12 Dec 2026 · updated 16 Sep 2026</p>
 </header>
 
 <form id="filters" class="filters">
@@ -178,6 +178,7 @@ input[type="date"], select {
     <label class="label" for="venue">Venue</label>
     <select id="venue" name="venue">
       <option value="">All venues</option>
+      <option value="awaykin">Awaykin (1)</option>
       <option value="barbican">Barbican (17)</option>
       <option value="brunette-coleman">Brunette Coleman (1)</option>
       <option value="fold">FOLD (1)</option>
@@ -202,12 +203,21 @@ input[type="date"], select {
   </div>
 </form>
 
-<p id="count" class="count" aria-live="polite">82 events</p>
+<p id="count" class="count" aria-live="polite">83 events</p>
 <p id="empty" class="empty" hidden>No events match these filters.</p>
 
 <main id="listing">
 <section class="day" data-day="2026-09-16">
   <h2>Wednesday 16 September 2026</h2>
+<article class="event" data-kind="live" data-venue="awaykin">
+  <h3><a href="https://www.eventbrite.co.uk/e/hanging-baskets-slancha-awaykin-tickets-1998630691199">Hanging Baskets: Slancha × Awaykin</a></h3>
+  <dl class="detail">
+    <dt>Time</dt><dd>18:00</dd>
+    <dt>Venue</dt><dd>Awaykin</dd>
+    <dt>Artists</dt><dd>Slancha, Awaykin</dd>
+  </dl>
+  <p class="meta"><span class="tag">Live</span> <span class="via">via Hand-added</span></p>
+</article>
 <article class="event" data-kind="live" data-venue="barbican">
   <h3>Ayanna-Witter Johnson: New Roots First Light</h3>
   <dl class="detail">
